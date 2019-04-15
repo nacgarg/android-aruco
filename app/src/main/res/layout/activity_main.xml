@@ -1,19 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:id="@+id/frameLayout">
 
     <org.opencv.android.JavaCameraView
+        android:id="@+id/color_blob_detection_activity_surface_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/color_blob_detection_activity_surface_view" />
+        />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="calibrate"
-        android:text="Recalibrate" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="calibrate"
+            android:text="Recalibrate"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="114dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="254dp"
+            android:layout_height="307dp"
+            android:background="@drawable/text_background"
+            android:text="TextView"
+            tools:layout_conversion_absoluteHeight="178dp"
+            tools:layout_conversion_absoluteWidth="163dp"
+            tools:layout_editor_absoluteX="200dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/usb_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="checkUSB"
+            android:text="CHeck usb" />
+
+    </LinearLayout>
 
 </FrameLayout>
