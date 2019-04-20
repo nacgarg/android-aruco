@@ -445,7 +445,7 @@ private String ACTION_USB_PERMISSION = "me.ngargi.engr100_vision.USB_PERMISSION"
                 (byte)(0xff & (hostAddress >> 24)) };
 
         try {
-            return InetAddress.getByAddress(addressBytes);
+            return InetAddress  .getByAddress(addressBytes);
         } catch (UnknownHostException e) {
             throw new AssertionError();
         }

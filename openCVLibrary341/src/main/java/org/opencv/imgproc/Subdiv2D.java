@@ -14,6 +14,7 @@ import org.opencv.core.Point;
 import org.opencv.core.Rect;
 import org.opencv.utils.Converters;
 
+
 // C++: class Subdiv2D
 //javadoc: Subdiv2D
 

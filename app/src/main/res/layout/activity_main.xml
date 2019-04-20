@@ -32,8 +32,8 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="254dp"
-            android:layout_height="307dp"
+            android:layout_width="119dp"
+            android:layout_height="78dp"
             android:background="@drawable/text_background"
             android:text="TextView"
             tools:layout_conversion_absoluteHeight="178dp"
